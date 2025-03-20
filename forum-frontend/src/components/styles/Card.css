@@ -1,0 +1,39 @@
+.card {
+  height: 80%;
+  width: 100%;
+  perspective: 125rem;
+  position: relative;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  @apply grid place-items-center;
+}
+
+
+.front {
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(-180deg);
+}
+
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card-heading {
+  @apply font-semibold bg-gradient-to-bl from-orange_bright to-yellow text-transparent bg-clip-text;
+}

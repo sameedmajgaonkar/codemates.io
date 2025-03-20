@@ -1,0 +1,39 @@
+.navbar-container {
+  @apply flex flex-col gap-2 md:flex-row justify-between items-center p-4 text-grey;
+}
+
+.nav {
+  @apply h-full text-white;
+}
+
+.nav ul {
+  @apply flex flex-col md:flex-row gap-2 md:gap-5 h-full;
+}
+
+.nav .link {
+  @apply flex flex-col md:flex-row gap-2 px-2 py-3 items-center text-xs md:text-base cursor-pointer text-center rounded-md font-semibold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  @apply text-orange bg-primary_dark;
+  background-color: #1f222d;
+}
+.nav ul a:last-child {
+  @apply bg-orange text-black hover:bg-orange_bright;
+}
+
+.logo {
+  @apply text-xl text-orange_bright font-semibold flex gap-2;
+}
+
+.logo span{
+  @apply hidden md:block
+}
+.links{
+  @apply flex flex-col md:flex-row whitespace-nowrap md:text-sm gap-4 p-2;
+}
+
+.links a.active{
+  background-color: none;
+}

@@ -1,0 +1,48 @@
+.forum {
+  @apply w-full  md:px-44 grid gap-8;
+}
+.header {
+  @apply flex items-center gap-10;
+}
+.header .votes {
+  @apply grid gap-4 text-3xl text-center text-grey;
+}
+.header h2 {
+  @apply text-3xl py-5 font-semibold text-orange;
+}
+.header p {
+  @apply w-fit  px-2 py-1 text-grey;
+}
+
+.content {
+  @apply grid gap-5;
+}
+
+.content .problem {
+  @apply bg-secondary p-4 rounded-md text-white;
+}
+.content .code {
+  @apply bg-grey p-4  rounded-md;
+}
+
+.answers-container h2 {
+  @apply text-lg text-orange font-semibold;
+}
+
+.answer-form form {
+  @apply flex flex-col gap-4;
+}
+.answer-form h1 {
+  @apply text-3xl bg-gradient-to-tl from-yellow to-orange_bright bg-clip-text text-transparent font-bold;
+}
+.answer-form textarea {
+  @apply w-full resize-none min-h-48 p-2 text-lg rounded-lg bg-grey;
+}
+
+.answer-form textarea::placeholder {
+  @apply text-primary;
+}
+
+.answer-form form .form-group button {
+  @apply mr-auto w-fit;
+}

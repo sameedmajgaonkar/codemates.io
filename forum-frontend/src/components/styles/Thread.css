@@ -1,0 +1,26 @@
+.thread {
+  @apply flex gap-3 p-4 w-full rounded-lg;
+}
+
+.thread-body {
+  @apply flex flex-col gap-2;
+}
+.user {
+  @apply flex gap-2 items-center text-sm text-white;
+}
+.user img {
+  @apply h-4 w-4 object-cover;
+}
+.user .duration {
+  @apply text-xs text-grey;
+}
+
+.thread-body .title {
+  @apply font-semibold text-lg  cursor-pointer text-orange;
+}
+.thread-body .problem {
+  @apply text-sm text-grey;
+}
+.upvotes {
+  @apply flex text-center items-center gap-1 h-fit ml-auto  text-xl text-green;
+}
